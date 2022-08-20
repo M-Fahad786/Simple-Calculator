@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SIMPLE CALCULATOR</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <h1>SIMPLE CALCULATOR</h1>
+    <!-- HEADER ENDED -->
+
+    <!-- MAIN-CONTAINER -->
+    <div class="main-container">
+      <!-- INPUT-->
+      <div class="inp-div">
+        <input type="text" class="inp" id="inp" />
+      </div>
+      <!-- INPUT ENDED -->
+
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <div>
+          <button class="clrBtn" onClick="eraseNumber()">CE</button>
+          <button class="clrBtn" onCLick="eraseNumber()">C</button>
+          <button class="btn" onClick="getNumber('%')">%</button>
+          <button class="btn" onClick="getNumber('*')">X</button>
+        </div>
+        <div>
+          <button class="btn" onClick="getNumber('7')">7</button>
+          <button class="btn" onClick="getNumber('8')">8</button>
+          <button class="btn" onClick="getNumber('9')">9</button>
+          <button class="btn" onClick="getNumber('/')">/</button>
+        </div>
+        <div>
+          <button class="btn" onClick="getNumber('4')">4</button>
+          <button class="btn" onClick="getNumber('5')">5</button>
+          <button class="btn" onClick="getNumber('6')">6</button>
+          <button class="btn" onClick="getNumber('-')">-</button>
+        </div>
+        <div>
+          <button class="btn" onClick="getNumber('1')">1</button>
+          <button class="btn" onClick="getNumber('2')">2</button>
+          <button class="btn" onClick="getNumber('3')">3</button>
+          <button class="btn" onClick="getNumber('+')">+</button>
+        </div>
+        <div>
+          <button class="btn" onClick="getNumber('0')">0</button>
+          <button class="btn" onClick="getNumber('.')">.</button>
+          <button class="btn" onClick="getNumber('+/-')">+/-</button>
+          <button class="btn" onClick="calcNumber()">=</button>
+        </div>
+      </div>
+      <!-- BUTTONS ENDED -->
+    </div>
+    <!-- MAIN-CONTAINER ENDED -->
+  </body>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</html>
